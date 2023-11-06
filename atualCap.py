@@ -1,8 +1,12 @@
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 from selenium import webdriver
 
-#Inicializando o driver do navegador Chrome
-driver = webdriver.Chrome()
+#Inicializa o driver do navegador (Chrome)
+driver = webdriver.Firefox()
 driver.maximize_window()
 url_login = 'https://coinmarketcap.com/'
 driver.get(url_login)
