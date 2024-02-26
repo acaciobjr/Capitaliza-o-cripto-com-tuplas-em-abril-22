@@ -6,7 +6,7 @@ import time
 from selenium import webdriver
 
 #Inicializa o driver do navegador (Chrome)
-driver = webdriver.Firefox()
+driver = webdriver.chrome()
 driver.maximize_window()
 url_login = 'https://coinmarketcap.com/'
 driver.get(url_login)
